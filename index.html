@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Signal — Article Trust Score</title>
+  <meta name="description" content="Signal helps you see whether articles give visible reasons to trust them." />
+  <link rel="icon" href="assets/signal-icon-128.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Signal home">
+      <img src="assets/signal-icon-128.png" alt="" />
+      <span>Signal</span>
+    </a>
+    <nav>
+      <a href="#how">How it works</a>
+      <a href="why-signal.html">Why Signal</a>
+      <a href="privacy.html">Privacy</a>
+      <a class="nav-cta" href="#install">Install</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Article trust inspection for the web</p>
+        <h1>See whether articles give visible reasons to trust them.</h1>
+        <p class="lead">
+          Signal summarizes articles, extracts key claims, checks for visible source support,
+          and gives an explainable Trust Score based on whether the article makes itself verifiable.
+        </p>
+        <div class="hero-actions" id="install">
+          <a class="button primary" href="#" aria-disabled="true">Chrome Web Store link coming soon</a>
+          <a class="button secondary" href="why-signal.html">Read why I built this</a>
+        </div>
+        <p class="note">Signal does not decide truth. It evaluates whether the article gives visible reasons to trust it.</p>
+      </div>
+
+      <div class="trust-card" aria-label="Signal product preview">
+        <div class="card-top">
+          <div>
+            <p class="mini-brand">SIGNAL</p>
+            <h2>Trust Profile</h2>
+          </div>
+          <div class="score-circle">31</div>
+        </div>
+        <div class="article-row">
+          <strong>Can this article be trusted?</strong>
+          <span>Trust Score: Low</span>
+          <p>This article gives limited visible reasons to trust it.</p>
+        </div>
+        <div class="tabs">
+          <span>Brief</span><span>Claims</span><span>Sources</span><span>Details</span>
+        </div>
+        <div class="brief-box">
+          <h3>Article summary</h3>
+          <p>This article reports a central claim, but Signal found limited visible support near the claims that matter.</p>
+          <h3>Trust read</h3>
+          <p>Low. The article relies on attribution and does not provide a clear verification path for key claims.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="principle">
+      <p>Signal starts from low trust. Articles earn trust by making their claims verifiable.</p>
+    </section>
+
+    <section class="grid-section" id="how">
+      <div class="section-heading">
+        <p class="eyebrow">How Signal works</p>
+        <h2>Fast enough for normal browsing. Detailed enough to inspect.</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article>
+          <span class="number">01</span>
+          <h3>Condenses the article</h3>
+          <p>Signal gives a short article summary so you can understand the topic quickly before deciding whether to keep reading.</p>
+        </article>
+        <article>
+          <span class="number">02</span>
+          <h3>Extracts key claims</h3>
+          <p>Signal identifies what the article appears to claim, then looks for visible support near those claims.</p>
+        </article>
+        <article>
+          <span class="number">03</span>
+          <h3>Checks the source trail</h3>
+          <p>Links, documents, citations, official pages, reports, and referenced-but-unlinked documents are surfaced for inspection.</p>
+        </article>
+        <article>
+          <span class="number">04</span>
+          <h3>Scores visible trust</h3>
+          <p>The Trust Score is based on visible signals: authorship, source support, source range, publication info, and commercial pressure.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="split">
+      <div>
+        <p class="eyebrow">The standard</p>
+        <h2>Don’t just ask readers to trust you. Show the evidence trail.</h2>
+      </div>
+      <div class="copy-block">
+        <p>
+          Signal rewards articles that make it easier for readers to verify what matters.
+          A linked document, filing, study, dataset, transcript, or original statement matters more than vague attribution.
+        </p>
+        <p>
+          If an article references a letter but does not link it, Signal can label that directly:
+          <strong>Document referenced, not linked.</strong>
+        </p>
+      </div>
+    </section>
+
+    <section class="score-section">
+      <div class="section-heading">
+        <p class="eyebrow">Trust Score</p>
+        <h2>Simple labels. Explainable math.</h2>
+      </div>
+      <div class="score-bands">
+        <div><strong>High</strong><span>Strong visible support</span></div>
+        <div><strong>Good</strong><span>Several visible reasons to trust</span></div>
+        <div><strong>Mixed</strong><span>Some support, important gaps</span></div>
+        <div><strong>Low</strong><span>Limited visible reasons to trust</span></div>
+        <div><strong>Very Low</strong><span>Little to no visible support</span></div>
+      </div>
+    </section>
+
+    <section class="privacy-callout">
+      <div>
+        <p class="eyebrow">Privacy-first</p>
+        <h2>Local analysis. No external AI API.</h2>
+        <p>
+          Signal analyzes webpage content locally in your browser. It does not send article text to OpenAI, Gemini,
+          or a backend service. It does not sell browsing history.
+        </p>
+      </div>
+      <a class="button secondary" href="privacy.html">Read privacy policy</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Signal. Built to make source support visible.</p>
+    <div>
+      <a href="why-signal.html">Why Signal</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </footer>
+</body>
+</html>
